@@ -1,0 +1,29 @@
+.root {
+  position: relative;
+  flex-shrink: 0;
+  width: 280px;
+  transition: width 0.3s ease-out;
+}
+
+.collapsed {
+  width: 48px;
+}
+
+.inner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 280px;
+  background: #555;
+  transition: width 0.3s ease-out;
+  z-index: 100;
+}
+
+.collapsed .inner {
+  width: 48px;
+}
+
+.collapsed.hover .inner {
+  width: 280px;
+}

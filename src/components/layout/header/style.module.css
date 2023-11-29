@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 8px;
+  flex-shrink: 0;
+  background: #333;
+}
